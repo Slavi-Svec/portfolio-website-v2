@@ -32,7 +32,7 @@ export default function Project() {
                             <a
                             href={projectData.link}
                             alt={projectData.title}
-                            rel="noopener noreferrer"
+                            rel=""
                             >
                             {projectData.title}
                             </a>
