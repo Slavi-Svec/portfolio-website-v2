@@ -1,6 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { SocialIcon } from 'react-social-icons'
+import Avatar from '../assets/logo.png'
+import Image from '../components/Image'
+
 
 export default function NavBar() {
   return (
@@ -10,10 +13,8 @@ export default function NavBar() {
           <NavLink
             to="/"
             exact
-            activeClassName="text-white"
-            className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold lemon-jelly tracking-widest"
           >
-            Slavi
+          <Image className="inflex-flex w-20 items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl racking-widest" src={Avatar} />
           </NavLink>
           <NavLink
             to="/post"
@@ -52,25 +53,12 @@ export default function NavBar() {
             style={{ height: 35, width: 35}}
           />
           <SocialIcon
-            url="https://codepen.io/slavi-svec/pens/public"
-            className="mr-4"
-            target="_blank"
-            fgColor="#fff"
-            style={{ height: 35, width: 35}}
-          />
-          <SocialIcon
             url="https://linkedin"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35}}
           />
-          <SocialIcon
-            url="https://www.facebook.com/izaak.svec/"
-            className="mr-4"
-            target="_blank"
-            fgColor="#fff"
-            style={{ height: 35, width: 35}} />
         </div>
       </div>
     </header>
