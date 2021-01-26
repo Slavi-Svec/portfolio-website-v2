@@ -7,7 +7,7 @@ import Post from "./components/Post"
 import Project from './components/Project'
 import NavBar from './components/NavBar'
 
-function App() {
+const  App = () => {
   return (
     <BrowserRouter>
     <NavBar />

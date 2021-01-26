@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
 
-export default function Post() {
+const Post = () => {
   const [postData, setPost] = useState(null);
 
   useEffect(() => {
@@ -25,10 +25,10 @@ export default function Post() {
   }, []);
 
   return (
-    <main className="bg-green-100 min-h-screen p-12">
+    <main className="bg-blue-100 min-h-screen p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive">
-          My Blog Posts Page!
+        <h1 className="text-5xl flex justify-center Quite-Magical ">
+          My Blog Posts Page
         </h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome to my page of blog posts
@@ -39,7 +39,7 @@ export default function Post() {
               <article>
                 <Link to={"/post/" + post.slug.current} key={post.slug.current}>
                   <span
-                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
+                    className="block h-64 relative rounded shadow leading-snug"
                     key={index}
                   >
                     <img
@@ -59,5 +59,7 @@ export default function Post() {
         </div>
       </section>
     </main>
-  );
+  )
 }
+
+export default Post

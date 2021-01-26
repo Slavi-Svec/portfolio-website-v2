@@ -9,7 +9,7 @@ function urlFor(source) {
   return builder.image(source)
 }
 
-export default function About() {
+const  About = () => {
   const [author, setAuthor] = useState(null)
 
   useEffect(() => {
@@ -53,3 +53,5 @@ export default function About() {
     </main>
   )
 }
+
+export default About

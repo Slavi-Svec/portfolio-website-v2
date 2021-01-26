@@ -2,10 +2,10 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { SocialIcon } from 'react-social-icons'
 import Avatar from '../assets/logo.png'
-import Image from '../components/Image'
+import Image from './Image'
 
 
-export default function NavBar() {
+const  NavBar = ()  => {
   return (
     <header className="bg-red-600">
       <div className="container mx-auto flex justify-between">
@@ -21,14 +21,14 @@ export default function NavBar() {
             className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
             activeClassName="text-red-100 bg-red-700"
           >
-            Blog Posts
+            Blog
           </NavLink>
           <NavLink
             to="/project"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
             activeClassName="text-red-100 bg-red-700"
           >
-            Projects
+            Work
           </NavLink>
           <NavLink
             to="/about"
@@ -39,13 +39,6 @@ export default function NavBar() {
           </NavLink>
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
-          <SocialIcon
-            url="https://twitter.com/SlaviSvec"
-            className="mr-4"
-            target="_blank"
-            fgColor="#fff"
-            style={{ height: 35, width: 35 }}
-          />
           <SocialIcon
             url="https://github.com/Slavi-Svec"
             className="mr-4" target="_blank"
@@ -59,8 +52,17 @@ export default function NavBar() {
             fgColor="#fff"
             style={{ height: 35, width: 35}}
           />
+          <SocialIcon
+            url="https://codepen.io/slavi-svec/pens/public"
+            className="mr-4"
+            target="_blank"
+            fgColor="#fff"
+            style={{ height: 35, width: 35}}
+          />
         </div>
       </div>
     </header>
   )
 }
+
+export default NavBar
